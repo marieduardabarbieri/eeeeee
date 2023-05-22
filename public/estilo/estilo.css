@@ -8,10 +8,20 @@ input{
     border-right: white    ;
 }
 
-section{
-    border:1px solid black; 
+.section{
     padding:20px; 
-    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+form{
+    border:1px solid black; 
+    padding: 10px 40px;
+    display: inline-block;
+    width: 20%;
 }
 
 input[type=submit], button{
@@ -35,9 +45,9 @@ button a{
 
 .divs{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     border: 1px solid rgb(125, 125, 125);
-    padding: 10px;
+    padding: 10px;margin: 40px;
 }
 
 article div{
@@ -48,4 +58,8 @@ article div{
 h1{
     color: cadetblue;
     font-size: 35px;
+}
+
+button:hover{
+    cursor: pointer;
 }

@@ -14,15 +14,15 @@
 
     <div class="divs">
     <% pessoas.forEach((pessoa) => { %>
-     <div>Nome:  <%= pessoa.nome %>    </div>   
-     <div>Sobrenome:  <%= pessoa.sobrenome %></div> 
-     <div>Idade:  <%= pessoa.idade %></div>  
-     <div>id:  <%= pessoa.id %></div>
+     <div><b>Nome: </b> <%= pessoa.nome %>    </div>   
+     <div><b>Sobrenome: </b> <%= pessoa.sobrenome %></div> 
+     <div><b>Idade: </b> <%= pessoa.idade %></div>  
+     <div><b>id: </b> <%= pessoa.id %></div>
     <button > <a href="/pessoas/deletar?id= <%= pessoa.id %>">Deletar</a></button>
     <% }) %>
     </div>
 
-    <button > <a href="/pessoas/criar">Cancelar</a></button>
+    <button > <a href="/pessoas/criar">Voltar ao formulário</a></button>
 </article>
 </body>
 </html>
